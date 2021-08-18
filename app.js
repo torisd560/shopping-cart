@@ -37,13 +37,15 @@ function calculateTotal(){
    const subTotal = phoneTotal + caseTotal;
    const tax = subTotal/10;
    const totalPrice = subTotal + tax;
-  
+  // set all innertex value
    document.getElementById('sub-total').innerText = subTotal;
    document.getElementById('tax-amount').innerText = tax;
    document.getElementById('total-price').innerText = totalPrice;
-   
-   
 }
+document.getElementById('relod-page').addEventListener('click', function(){
+    location.reload()
+})
+
 
 
 
